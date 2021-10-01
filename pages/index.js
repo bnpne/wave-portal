@@ -11,6 +11,29 @@ const Index = () => {
 
   //test
 
+  const populateWaves = async () => {
+    const provider = new ethers.providers.Web3Provider(ethereum)
+    const signer = provider.getSigner()
+    const wavePortalContract = new ethers.Contract(
+      contractAddress,
+      contractABI,
+      signer
+    )
+
+    const waves = await wavePortalContract.getAllWaves()
+
+    let wavesCleaned = []
+    waves.forEach((wave) => {
+      wavesCleaned.push({
+        address: wave.waver,
+        timestamp: new Date(wave.timestamp * 1000),
+        message: wave.message,
+      })
+    })
+
+    setAllWaves(wavesCleaned)
+  }
+
   const getAllWaves = async () => {
     try {
       if (window.ethereum) {
@@ -139,7 +162,7 @@ const Index = () => {
 
   useEffect(() => {
     checkIfWalletIsConnected()
-    getAllWaves()
+    populateWaves()
   }, [])
 
   return (
