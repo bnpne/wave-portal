@@ -161,8 +161,8 @@ const Index = () => {
   }
 
   useEffect(() => {
-    checkIfWalletIsConnected()
     populateWaves()
+    checkIfWalletIsConnected()
   }, [])
 
   return (
