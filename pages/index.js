@@ -9,6 +9,8 @@ const Index = () => {
   const contractAddress = '0x28C90CcBD7bFf4bA1e14b77837b45e9d673a2D66'
   const contractABI = abi.abi
 
+  //test
+
   const getAllWaves = async () => {
     try {
       if (window.ethereum) {
