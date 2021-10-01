@@ -6,7 +6,7 @@ const Index = () => {
   const [currentAccount, setCurrentAccount] = useState('')
   const [allWaves, setAllWaves] = useState([])
 
-  const contractAddress = '0x28C90CcBD7bFf4bA1e14b77837b45e9d673a2D66'
+  const contractAddress = '0x181598C981Cd3450902510Eef41Dd987Cb24f3ed'
   const contractABI = abi.abi
 
   //test
@@ -149,6 +149,8 @@ const Index = () => {
 
         await waveTxn.wait()
         console.log('Mined -- ', waveTxn.hash)
+
+        populateWaves()
 
         count = await wavePortalContract.getTotalWaves()
         console.log('Retrieved total wave count...', count.toNumber())
