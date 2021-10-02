@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ethers } from 'ethers'
 import abi from '../utils/WavePortal.json'
+import MetaTags from '../components/MetaTags'
 
 const Index = () => {
   const [currentAccount, setCurrentAccount] = useState('')
@@ -169,6 +170,7 @@ const Index = () => {
 
   return (
     <div className="flex flex-1 w-full min-h-screen overflow-auto text-white bg-dark font-sans ">
+      <MetaTags />
       <div className="max-w-xl mx-auto my-auto py-20 px-3">
         <h1 className="text-4xl font-bold text-center pb-5">🤙🏼 YEW! 🤙🏼</h1>
         <div className="text-lg leading-5 font-extralight text-center max-w-lg pb-5 mx-auto">
