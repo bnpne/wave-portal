@@ -168,7 +168,7 @@ const Index = () => {
   }, [])
 
   return (
-    <div className="flex flex-1 w-full min-h-screen overflow-auto text-white bg-dark font-comp ">
+    <div className="flex flex-1 w-full min-h-screen overflow-auto text-white bg-dark font-sans ">
       <div className="max-w-xl mx-auto my-auto py-20 px-3">
         <h1 className="text-4xl font-comp font-bold text-center pb-5">
           🤙🏼 YEW! 🤙🏼
