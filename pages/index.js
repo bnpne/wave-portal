@@ -170,10 +170,8 @@ const Index = () => {
   return (
     <div className="flex flex-1 w-full min-h-screen overflow-auto text-white bg-dark font-sans ">
       <div className="max-w-xl mx-auto my-auto py-20 px-3">
-        <h1 className="text-4xl font-comp font-bold text-center pb-5">
-          🤙🏼 YEW! 🤙🏼
-        </h1>
-        <div className="text-lg leading-5 font-extralight text-center max-w-lg pb-5 mx-auto font-comp">
+        <h1 className="text-4xl font-bold text-center pb-5">🤙🏼 YEW! 🤙🏼</h1>
+        <div className="text-lg leading-5 font-extralight text-center max-w-lg pb-5 mx-auto">
           My name is Ben. I love Surfing 🏄🏼‍♂️, but need a wave to surf! Connect
           your Ethereum Wallet and send me a wave 🌊 or two 🌊🌊 over the
           Blockchain!
